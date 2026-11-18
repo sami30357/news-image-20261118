@@ -10,7 +10,7 @@
     background: #f6f1e7;
     color: #191713;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 26px 30px 22px 30px;
+    padding: 16px 28px 14px 28px;
     display: flex;
     flex-direction: column;
   }
@@ -18,10 +18,10 @@
   .kicker {
     color: #b3261e;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 16px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
   .rule-red { height: 5px; background: #b3261e; }
   .rule-black { height: 2px; background: #191713; }
@@ -31,18 +31,18 @@
   .masthead { text-align: center; flex: 0 0 auto; }
   .masthead h1 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 78px;
+    font-size: 64px;
     line-height: 1;
     letter-spacing: 6px;
     font-weight: 900;
-    margin: 10px 0 8px 0;
+    margin: 8px 0 6px 0;
   }
   .masthead .date {
-    font-size: 31px;
+    font-size: 26px;
     font-weight: bold;
     letter-spacing: 3px;
     color: #b3261e;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .masthead .rule-black { margin-top: 2px; }
 
@@ -51,19 +51,19 @@
     flex: 0 0 auto;
     display: flex;
     gap: 22px;
-    padding: 14px 0 13px 0;
+    padding: 9px 0 9px 0;
     border-bottom: 1px solid rgba(25,23,19,0.45);
   }
   .lead-text { flex: 1 1 620px; }
   .lead-text h2 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 45px;
+    font-size: 38px;
     line-height: 1.06;
     font-weight: 900;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
   }
-  .lead-text p { font-size: 21px; line-height: 1.42; }
-  .lead-art { flex: 0 0 296px; display: flex; align-items: center; justify-content: center; }
+  .lead-text p { font-size: 17px; line-height: 1.4; }
+  .lead-art { flex: 0 0 258px; display: flex; align-items: center; justify-content: center; }
   .lead-art svg { display: block; }
 
   /* ---------- mid row ---------- */
@@ -71,56 +71,85 @@
     flex: 0 0 auto;
     display: flex;
     gap: 24px;
-    padding: 13px 0 12px 0;
+    padding: 8px 0 8px 0;
     border-bottom: 1px solid rgba(25,23,19,0.45);
   }
-  .mid article { flex: 1 1 0; display: flex; gap: 14px; }
-  .mid .icon { flex: 0 0 74px; display: flex; align-items: flex-start; justify-content: center; padding-top: 4px; }
+  .mid article { flex: 1 1 0; display: flex; gap: 12px; }
+  .mid .icon { flex: 0 0 54px; display: flex; align-items: flex-start; justify-content: center; padding-top: 4px; }
   .mid .icon svg { display: block; }
   .mid h3 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 29px;
+    font-size: 24px;
     line-height: 1.12;
     font-weight: 900;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
   }
-  .mid p { font-size: 18.5px; line-height: 1.38; }
+  .mid p { font-size: 15px; line-height: 1.38; }
 
   /* ---------- small row ---------- */
   .small {
     flex: 0 0 auto;
     display: flex;
     gap: 24px;
-    padding: 12px 0 12px 0;
+    padding: 7px 0 7px 0;
     border-bottom: 1px solid rgba(25,23,19,0.45);
   }
   .small article { flex: 1 1 0; display: flex; gap: 14px; }
-  .small .icon { flex: 0 0 62px; display: flex; align-items: flex-start; justify-content: center; padding-top: 3px; }
+  .small .icon { flex: 0 0 56px; display: flex; align-items: flex-start; justify-content: center; padding-top: 3px; }
   .small .icon svg { display: block; }
   .small h3 {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 25px;
+    font-size: 21px;
     line-height: 1.12;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
-  .small p { font-size: 17.5px; line-height: 1.36; }
+  .small p { font-size: 15px; line-height: 1.36; }
 
-  /* ---------- bottom strip ---------- */
-  .strip { flex: 1 1 auto; padding-top: 12px; }
-  .strip .strip-head {
-    font-size: 17px;
+  /* ---------- brief section ---------- */
+  .brief {
+    flex: 0 0 auto;
+    padding: 9px 0 8px 0;
+    border-bottom: 1px solid rgba(25,23,19,0.45);
+  }
+  .brief-head {
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 2.5px;
     color: #b3261e;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
-  .strip .grid { display: flex; flex-wrap: wrap; gap: 4px 26px; }
-  .strip .item { flex: 1 1 44%; font-size: 18px; line-height: 1.35; padding-left: 14px; position: relative; }
+  .brief-grid { display: flex; gap: 20px; }
+  .bcol { flex: 1 1 0; }
+  .bcol-head {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #b3261e;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(25,23,19,0.45);
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+  }
+  .bitem { font-size: 12px; line-height: 1.28; margin-bottom: 4px; }
+  .bitem b { font-weight: bold; }
+
+  /* ---------- bottom strip ---------- */
+  .strip { flex: 1 1 auto; padding-top: 10px; }
+  .strip .strip-head {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #b3261e;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .strip .grid { display: flex; flex-wrap: wrap; gap: 3px 26px; }
+  .strip .item { flex: 1 1 44%; font-size: 14px; line-height: 1.35; padding-left: 13px; position: relative; }
   .strip .item::before {
     content: "";
-    position: absolute; left: 0; top: 9px;
+    position: absolute; left: 0; top: 7px;
     width: 7px; height: 7px; background: #b3261e;
   }
 
@@ -128,10 +157,10 @@
   .footer {
     flex: 0 0 auto;
     text-align: center;
-    font-size: 16px;
+    font-size: 13.5px;
     letter-spacing: 2px;
     font-weight: bold;
-    padding-top: 10px;
+    padding-top: 6px;
     border-top: 2px solid #191713;
   }
 </style>
@@ -153,7 +182,7 @@
     </div>
     <div class="lead-art">
       <!-- Flat bridge illustration: deck, two towers, one arch collapsed into the sea -->
-      <svg width="296" height="196" viewBox="0 0 296 196" xmlns="http://www.w3.org/2000/svg">
+      <svg width="258" height="170" viewBox="0 0 296 196" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="296" height="196" fill="#e9e2d2"/>
         <!-- sky -->
         <circle cx="248" cy="34" r="20" fill="#d8cfae"/>
@@ -189,7 +218,7 @@
     <article>
       <div class="icon">
         <!-- Tanker on waves with a red burst -->
-        <svg width="74" height="66" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
+        <svg width="54" height="48" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
           <path d="M37 4 L41 12 L49 12 L43 18 L45 26 L37 21 L29 26 L31 18 L25 12 L33 12 Z" fill="#b3261e"/>
           <rect x="8" y="34" width="58" height="12" fill="#191713"/>
           <rect x="16" y="26" width="14" height="8" fill="#191713"/>
@@ -207,7 +236,7 @@
     <article>
       <div class="icon">
         <!-- Globe with three meeting dots -->
-        <svg width="74" height="66" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
+        <svg width="54" height="48" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
           <circle cx="37" cy="33" r="28" fill="none" stroke="#191713" stroke-width="4"/>
           <ellipse cx="37" cy="33" rx="13" ry="28" fill="none" stroke="#191713" stroke-width="2"/>
           <line x1="9" y1="33" x2="65" y2="33" stroke="#191713" stroke-width="2"/>
@@ -228,7 +257,7 @@
     <article>
       <div class="icon">
         <!-- Virus: circle with spikes -->
-        <svg width="62" height="56" viewBox="0 0 62 56" xmlns="http://www.w3.org/2000/svg">
+        <svg width="56" height="51" viewBox="0 0 62 56" xmlns="http://www.w3.org/2000/svg">
           <g stroke="#b3261e" stroke-width="3">
             <line x1="31" y1="4" x2="31" y2="14"/>
             <line x1="31" y1="42" x2="31" y2="52"/>
@@ -253,7 +282,7 @@
     <article>
       <div class="icon">
         <!-- Medical cross in a circle -->
-        <svg width="62" height="56" viewBox="0 0 62 56" xmlns="http://www.w3.org/2000/svg">
+        <svg width="56" height="51" viewBox="0 0 62 56" xmlns="http://www.w3.org/2000/svg">
           <circle cx="31" cy="28" r="26" fill="none" stroke="#191713" stroke-width="4"/>
           <rect x="25" y="14" width="12" height="28" fill="#b3261e"/>
           <rect x="17" y="22" width="28" height="12" fill="#b3261e"/>
@@ -267,13 +296,51 @@
     </article>
   </section>
 
+  <section class="brief">
+    <div class="brief-head">The World in Brief</div>
+    <div class="brief-grid">
+      <div class="bcol">
+        <div class="bcol-head">Europe</div>
+        <div class="bitem"><b>UN:</b> 372+ civilians killed in Ukraine in October.</div>
+        <div class="bitem"><b>France:</b> 140,000 join pay protests; students rally on.</div>
+        <div class="bitem"><b>France:</b> Tests M51.3 missile from submarine off Brittany.</div>
+        <div class="bitem"><b>Sweden &amp; UK:</b> &euro;65m and &pound;240m more for Ukraine&rsquo;s defence.</div>
+        <div class="bitem"><b>Romania:</b> M5.3 quake hits; trains collide near Prague, dozens hurt.</div>
+        <div class="bitem"><b>Latvia:</b> Confidence vote backs Kulbergs government.</div>
+        <div class="bitem"><b>Slovakia:</b> Mass anti-government protests held.</div>
+      </div>
+      <div class="bcol">
+        <div class="bcol-head">Middle East &amp; Africa</div>
+        <div class="bitem"><b>Gaza:</b> Cold kills in tents of the displaced.</div>
+        <div class="bitem"><b>Gaza:</b> WFP gives one hot meal every two days.</div>
+        <div class="bitem"><b>Israel:</b> Kahana, a Netanyahu opponent, elected Knesset president.</div>
+        <div class="bitem"><b>Sudan:</b> UN confirms over 2,230 civilian deaths.</div>
+        <div class="bitem"><b>Mozambique:</b> Terrorism trial of opposition leader Mondlane begins.</div>
+        <div class="bitem"><b>West Bank:</b> UK and Australia sanction firms tied to settlements.</div>
+        <div class="bitem"><b>Iran:</b> France announces new sanctions.</div>
+      </div>
+      <div class="bcol">
+        <div class="bcol-head">Asia-Pacific &amp; Americas</div>
+        <div class="bitem"><b>Mongolia:</b> President Ukhnaa resigns amid a corruption scandal.</div>
+        <div class="bitem"><b>Bangladesh:</b> Unrest as police station burned in wage clashes.</div>
+        <div class="bitem"><b>Japan:</b> Reports airspace violation by two Russian jets.</div>
+        <div class="bitem"><b>US:</b> Asif Merchant gets 27 years over Trump plot.</div>
+        <div class="bitem"><b>US:</b> Computer outages reach the NSA; no sign of attack.</div>
+        <div class="bitem"><b>Costa Rica:</b> Journalist probing drug trafficking killed.</div>
+        <div class="bitem"><b>Brazil:</b> Isolated Awa group emerges from the Amazon.</div>
+      </div>
+    </div>
+  </section>
+
   <section class="strip">
-    <div class="strip-head">Also today</div>
+    <div class="strip-head">Markets &middot; Tech &middot; Sport</div>
     <div class="grid">
       <div class="item">Nvidia&rsquo;s quarterly sales doubled past $100bn for the first time</div>
       <div class="item">Gold fell to a one-year low</div>
       <div class="item">Russian military plane crashed in Siberia &mdash; 19 dead</div>
       <div class="item">Magnitude 6 earthquake struck Papua New Guinea</div>
+      <div class="item">NASA&rsquo;s Voyager 1 reaches one light-day from Earth</div>
+      <div class="item">Microsoft Outlook meltdown; outages show no sign of cyberattack</div>
     </div>
   </section>
 
