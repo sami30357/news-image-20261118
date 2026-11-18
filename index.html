@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>World News — 18 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    background: #f6f1e7;
+    color: #191713;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 26px 30px 22px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .red { color: #b3261e; }
+  .kicker {
+    color: #b3261e;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+  .rule-red { height: 5px; background: #b3261e; }
+  .rule-black { height: 2px; background: #191713; }
+  .rule-thin { height: 1px; background: #191713; opacity: 0.45; }
+
+  /* ---------- masthead ---------- */
+  .masthead { text-align: center; flex: 0 0 auto; }
+  .masthead h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 78px;
+    line-height: 1;
+    letter-spacing: 6px;
+    font-weight: 900;
+    margin: 10px 0 8px 0;
+  }
+  .masthead .date {
+    font-size: 31px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #b3261e;
+    margin-bottom: 10px;
+  }
+  .masthead .rule-black { margin-top: 2px; }
+
+  /* ---------- lead ---------- */
+  .lead {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 22px;
+    padding: 14px 0 13px 0;
+    border-bottom: 1px solid rgba(25,23,19,0.45);
+  }
+  .lead-text { flex: 1 1 620px; }
+  .lead-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 45px;
+    line-height: 1.06;
+    font-weight: 900;
+    margin-bottom: 9px;
+  }
+  .lead-text p { font-size: 21px; line-height: 1.42; }
+  .lead-art { flex: 0 0 296px; display: flex; align-items: center; justify-content: center; }
+  .lead-art svg { display: block; }
+
+  /* ---------- mid row ---------- */
+  .mid {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 24px;
+    padding: 13px 0 12px 0;
+    border-bottom: 1px solid rgba(25,23,19,0.45);
+  }
+  .mid article { flex: 1 1 0; display: flex; gap: 14px; }
+  .mid .icon { flex: 0 0 74px; display: flex; align-items: flex-start; justify-content: center; padding-top: 4px; }
+  .mid .icon svg { display: block; }
+  .mid h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 29px;
+    line-height: 1.12;
+    font-weight: 900;
+    margin-bottom: 6px;
+  }
+  .mid p { font-size: 18.5px; line-height: 1.38; }
+
+  /* ---------- small row ---------- */
+  .small {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 24px;
+    padding: 12px 0 12px 0;
+    border-bottom: 1px solid rgba(25,23,19,0.45);
+  }
+  .small article { flex: 1 1 0; display: flex; gap: 14px; }
+  .small .icon { flex: 0 0 62px; display: flex; align-items: flex-start; justify-content: center; padding-top: 3px; }
+  .small .icon svg { display: block; }
+  .small h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.12;
+    font-weight: 900;
+    margin-bottom: 5px;
+  }
+  .small p { font-size: 17.5px; line-height: 1.36; }
+
+  /* ---------- bottom strip ---------- */
+  .strip { flex: 1 1 auto; padding-top: 12px; }
+  .strip .strip-head {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    color: #b3261e;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .strip .grid { display: flex; flex-wrap: wrap; gap: 4px 26px; }
+  .strip .item { flex: 1 1 44%; font-size: 18px; line-height: 1.35; padding-left: 14px; position: relative; }
+  .strip .item::before {
+    content: "";
+    position: absolute; left: 0; top: 9px;
+    width: 7px; height: 7px; background: #b3261e;
+  }
+
+  /* ---------- footer ---------- */
+  .footer {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-top: 10px;
+    border-top: 2px solid #191713;
+  }
+</style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="rule-red"></div>
+    <h1>WORLD NEWS</h1>
+    <div class="date">WEDNESDAY &middot; 18 NOVEMBER 2026</div>
+    <div class="rule-black"></div>
+  </header>
+
+  <section class="lead">
+    <div class="lead-text">
+      <div class="kicker">Ukraine &middot; The War</div>
+      <h2>Crimea bridge hit: arch collapses into the strait</h2>
+      <p>Ukrainian drones and missiles partially destroyed the Kerch bridge to Crimea. One of its arches fell into the strait. President Zelensky confirmed the strike.</p>
+    </div>
+    <div class="lead-art">
+      <!-- Flat bridge illustration: deck, two towers, one arch collapsed into the sea -->
+      <svg width="296" height="196" viewBox="0 0 296 196" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="296" height="196" fill="#e9e2d2"/>
+        <!-- sky -->
+        <circle cx="248" cy="34" r="20" fill="#d8cfae"/>
+        <!-- sea -->
+        <rect x="0" y="150" width="296" height="46" fill="#2e5a6b"/>
+        <path d="M0 160 q18 -8 37 0 t37 0 t37 0 t37 0 t37 0 t37 0 t37 0 t37 0" fill="none" stroke="#f6f1e7" stroke-width="3"/>
+        <path d="M0 176 q18 -8 37 0 t37 0 t37 0 t37 0 t37 0 t37 0 t37 0 t37 0" fill="none" stroke="#f6f1e7" stroke-width="3" opacity="0.6"/>
+        <!-- bridge deck -->
+        <rect x="6" y="118" width="284" height="10" fill="#191713"/>
+        <!-- left tower -->
+        <rect x="52" y="62" width="10" height="66" fill="#191713"/>
+        <rect x="42" y="56" width="30" height="8" fill="#191713"/>
+        <!-- right tower -->
+        <rect x="234" y="62" width="10" height="66" fill="#191713"/>
+        <rect x="224" y="56" width="30" height="8" fill="#191713"/>
+        <!-- intact arch (left): tall, clear semicircle -->
+        <path d="M62 128 Q106 70 148 128" fill="none" stroke="#191713" stroke-width="7"/>
+        <!-- collapsed arch (right): deck broken, section sagging into the sea -->
+        <rect x="196" y="114" width="24" height="16" fill="#e9e2d2"/>
+        <path d="M148 128 Q186 138 202 152 Q216 170 230 160" fill="none" stroke="#b3261e" stroke-width="7"/>
+        <path d="M206 152 L214 170 L200 170 Z" fill="#b3261e"/>
+        <!-- cables -->
+        <line x1="57" y1="64" x2="57" y2="118" stroke="#191713" stroke-width="2" opacity="0.55"/>
+        <line x1="239" y1="64" x2="239" y2="118" stroke="#191713" stroke-width="2" opacity="0.55"/>
+        <!-- falling debris -->
+        <rect x="196" y="140" width="8" height="8" fill="#191713"/>
+        <rect x="222" y="146" width="6" height="6" fill="#191713"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="mid">
+    <article>
+      <div class="icon">
+        <!-- Tanker on waves with a red burst -->
+        <svg width="74" height="66" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
+          <path d="M37 4 L41 12 L49 12 L43 18 L45 26 L37 21 L29 26 L31 18 L25 12 L33 12 Z" fill="#b3261e"/>
+          <rect x="8" y="34" width="58" height="12" fill="#191713"/>
+          <rect x="16" y="26" width="14" height="8" fill="#191713"/>
+          <rect x="46" y="28" width="8" height="6" fill="#191713"/>
+          <path d="M4 52 q8 -6 16 0 t16 0 t16 0 t16 0" fill="none" stroke="#2e5a6b" stroke-width="3"/>
+          <path d="M4 60 q8 -6 16 0 t16 0 t16 0 t16 0" fill="none" stroke="#2e5a6b" stroke-width="3" opacity="0.6"/>
+        </svg>
+      </div>
+      <div>
+        <div class="kicker">The Gulf</div>
+        <h3>US strikes Qeshm Island; Iran hits back at US bases</h3>
+        <p>The US struck Qeshm Island in the Strait of Hormuz. Iran answered with missiles and drones at US bases in Bahrain and Kuwait. An oil ship was hit; five tankers struck.</p>
+      </div>
+    </article>
+    <article>
+      <div class="icon">
+        <!-- Globe with three meeting dots -->
+        <svg width="74" height="66" viewBox="0 0 74 66" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="37" cy="33" r="28" fill="none" stroke="#191713" stroke-width="4"/>
+          <ellipse cx="37" cy="33" rx="13" ry="28" fill="none" stroke="#191713" stroke-width="2"/>
+          <line x1="9" y1="33" x2="65" y2="33" stroke="#191713" stroke-width="2"/>
+          <circle cx="24" cy="22" r="6" fill="#b3261e"/>
+          <circle cx="50" cy="22" r="6" fill="#191713"/>
+          <circle cx="37" cy="46" r="6" fill="#2e5a6b"/>
+        </svg>
+      </div>
+      <div>
+        <div class="kicker">APEC &middot; Shenzhen</div>
+        <h3>Trump lands in Shenzhen; first trilateral on Thursday</h3>
+        <p>President Trump arrived for the APEC summit, greeted by China&rsquo;s Xi Jinping. Trump, Xi and Russia&rsquo;s Putin meet Thursday on nuclear arms, Ukraine and Iran.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="small">
+    <article>
+      <div class="icon">
+        <!-- Virus: circle with spikes -->
+        <svg width="62" height="56" viewBox="0 0 62 56" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#b3261e" stroke-width="3">
+            <line x1="31" y1="4" x2="31" y2="14"/>
+            <line x1="31" y1="42" x2="31" y2="52"/>
+            <line x1="6" y1="28" x2="16" y2="28"/>
+            <line x1="46" y1="28" x2="56" y2="28"/>
+            <line x1="13" y1="10" x2="20" y2="17"/>
+            <line x1="42" y1="39" x2="49" y2="46"/>
+            <line x1="49" y1="10" x2="42" y2="17"/>
+            <line x1="20" y1="39" x2="13" y2="46"/>
+          </g>
+          <circle cx="31" cy="28" r="15" fill="#b3261e"/>
+          <circle cx="26" cy="24" r="4" fill="#f6f1e7"/>
+          <circle cx="36" cy="32" r="3" fill="#f6f1e7"/>
+        </svg>
+      </div>
+      <div>
+        <div class="kicker">Health</div>
+        <h3>US loses measles-free status after 26 years</h3>
+        <p>More than 5,400 cases this year &mdash; the worst outbreak in three decades &mdash; and 10 deaths.</p>
+      </div>
+    </article>
+    <article>
+      <div class="icon">
+        <!-- Medical cross in a circle -->
+        <svg width="62" height="56" viewBox="0 0 62 56" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="31" cy="28" r="26" fill="none" stroke="#191713" stroke-width="4"/>
+          <rect x="25" y="14" width="12" height="28" fill="#b3261e"/>
+          <rect x="17" y="22" width="28" height="12" fill="#b3261e"/>
+        </svg>
+      </div>
+      <div>
+        <div class="kicker">Health &middot; DR Congo</div>
+        <h3>Ebola kills three in four children under five</h3>
+        <p>Nearly three-quarters of infected children under five do not survive. Bunia and Beni are the epicentres.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="strip">
+    <div class="strip-head">Also today</div>
+    <div class="grid">
+      <div class="item">Nvidia&rsquo;s quarterly sales doubled past $100bn for the first time</div>
+      <div class="item">Gold fell to a one-year low</div>
+      <div class="item">Russian military plane crashed in Siberia &mdash; 19 dead</div>
+      <div class="item">Magnitude 6 earthquake struck Papua New Guinea</div>
+    </div>
+  </section>
+
+  <footer class="footer">18 NOVEMBER 2026 &middot; WORLD NEWS</footer>
+
+</body>
+</html>
