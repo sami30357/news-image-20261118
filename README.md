@@ -1,33 +1,35 @@
-[![make.fun bounty](https://img.shields.io/badge/make.fun-news--image--20261118-1b2a4a)](https://make.fun/c/news-image-20261118)
-[![52 stories](https://img.shields.io/badge/stories-52-brightgreen)](https://make.fun/c/news-image-20261118)
-[![Prize $250 USDC](https://img.shields.io/badge/prize-%24250%20USDC-gold)](https://make.fun/c/news-image-20261118)
+# The World in One Picture — 18 November 2026
 
-# Wednesday 18 November 2026 — The World in One Day
+A single 1024×1024 front page (`entry.png`) carrying **52 stories from one day** —
+Wednesday 18 November 2026 — across **7 regions** (Asia 11, Europe 9, Americas 9,
+Middle East 7, Africa 7, Oceania 3, Global 6) and 9 fields, with **15 drawn pictures**:
+3 tall heroes (Xi greets Trump in Shenzhen, the Gulf drone intercepts, Voyager 1
+crossing one light-day) and 12 panels, plus a full-width dotted world map with 15
+numbered pins, a UTC timeline, a day-in-numbers line, proof tags on every drawn
+story, a HOW SURE legend, and a DATE CHECK naming what was left out.
 
-A single front-page poster summing up the world's news of Wednesday
-18 November 2026: **52 stories, 7 regions, 12 drawn pictures**.
+## Layout — "The Evening Edition"
 
-Three tall heroes lead the page — Xi greeting Trump on the Shenzhen
-tarmac, Gulf air defences intercepting drones over Kuwait and Bahrain,
-and Voyager 1 crossing one light-day from Earth — followed by nine drawn
-panels in a 3×3 grid, a full-width "Where it happened" map ribbon, and
-the remaining stories as briefs in three columns. Every drawn panel
-carries a proof tag (CONFIRMED / CLAIM / OFFICIALS / FORECAST) with a
-"How sure" legend, an eight-slot UTC timeline runs under the masthead,
-and a date-check box names the stories left out because they were first
-reported on Tuesday 17 November, plus the events that had not happened
-yet on Wednesday.
+Charcoal-black masthead, region bar, numbers line, BY FIELD strip, UTC strip,
+3 heroes, dotted-map band, 12 panels in 3 rows of 4, briefs 16–52 in 3 columns,
+DATE CHECK, HOW SURE legend, footer and sources line.
 
-## How to run it
+## Date check
 
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-```
-
-`main.ts` copies the committed `entry.png` (1024×1024 PNG) into the
-output directory, using Node builtins only. No network, no other writes.
+Left out because they were first reported Tuesday 17 November: Peltola's Alaska
+win, Nvidia's results, the US strike on Qeshm, the Knesset speaker vote, the Kerch
+Bridge collapse, Mongolia's president resigning, the Prague train crash, the
+Kemerovo crash, the Board of Peace Gaza warning, COP31's first draft (Mon 16).
+Not yet news on Wednesday: the Trump–Xi–Putin summit (Thu 19 Nov), Cyclone
+Akvan's landfall (Fri 20 Nov), Anthropic's first trade (Thu 19 Nov), GTA VI in
+the US (Thu 19 Nov).
 
 ## Sources
 
-Reuters, AP, AFP, DW, Al Jazeera, NASA, the Fed, the ONS, the IMD,
-Amnesty International, the WHO, Sotheby's and Rockstar Games.
+Reuters · AP · AFP · DW · Al Jazeera · NPR · CBS · Fed · ONS · IMD · NASA ·
+Amnesty · WHO.
+
+## Run
+
+`main.ts` (node builtins only, no network) copies `entry.png` byte-identical
+into `MAKEFUN_OUTPUT_DIR` (default `./out`).
