@@ -1,30 +1,30 @@
-// news-image-20261118 — V2 entrypoint (Node 22, standard library only).
+// Front-page entrypoint for the 18 November 2026 news poster.
 //
-// The poster is drawn once, ahead of time, and shipped in this repository
-// as entry.png (1024 x 1024, under the 1 MiB cap). This program's only job
-// is to place an exact copy of that file at the grader's output path, so
-// every run writes the same bytes the judge sees.
+// The poster itself is drawn ahead of time and committed as entry.png.
+// This program only places that file where the grader expects it:
+// the directory named by MAKEFUN_OUTPUT_DIR.
 //
-// The grader runs it with MAKEFUN_OUTPUT_DIR set to its output directory
-// (or /output by default); outside the grader, set the variable yourself:
-//   MAKEFUN_OUTPUT_DIR=out node main.ts
+// It uses Node builtins alone, reaches for no network, and writes
+// nowhere except the output directory. The copy is byte for byte, so
+// running the program twice writes the same file twice.
 
-import { copyFileSync, mkdirSync, statSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const here = dirname(fileURLToPath(import.meta.url));
-const source = join(here, "entry.png");
-const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
-const target = join(outDir, "entry.png");
+// The repository root is the folder that holds this file.
+const root = dirname(fileURLToPath(import.meta.url));
+
+// The committed poster, next to this file.
+const source = join(root, "entry.png");
+
+// The grader sets MAKEFUN_OUTPUT_DIR. When a person runs this by hand
+// with no variable set, a local "out" folder is used instead.
+const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? join(root, "out");
+
+if (!existsSync(source)) {
+  throw new Error("entry.png is missing from the repository root");
+}
 
 mkdirSync(outDir, { recursive: true });
-copyFileSync(source, target);
-
-// The copy must be exact: same size as the shipped poster, or fail loudly.
-const from = statSync(source).size;
-const to = statSync(target).size;
-if (from !== to) {
-  throw new Error(`entry.png copy mismatch: wrote ${to} bytes, expected ${from}`);
-}
-console.log(`wrote ${target} (${to} bytes)`);
+copyFileSync(source, join(outDir, "entry.png"));
